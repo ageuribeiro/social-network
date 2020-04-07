@@ -1,0 +1,69 @@
+{
+    "config": {
+        "network": {
+            "default": {
+                "network-social": "Default",
+                "url": "https://www.google.com/",
+                "mensagem": "Default setting has been set."
+            },
+            "facebook": {
+                "network-social": "Facebook.Inc",
+                "url": "https://www.facebook.com/",
+                "mensagem": "Facebook setting has been set."
+            },
+            "instagram": {
+                "network-social": "Instagram.Inc",
+                "url": "https://www.instagram.com/",
+                "mensagem": "Instagram setting has been set."
+            },
+            "linkedin": {
+                "network-social": "LinkedIn.Inc",
+                "url": "https://br.linkedin.com/",
+                "mensagem": "Linkedin setting has been set."
+            },
+            "telegram": {
+                "network-social": "Telegram.Inc",
+                "url": "https://web.telegram.org/#/login",
+                "mensagem": "Telegram setting has been set."
+            },
+            "twitter": {
+                "network-social": "Twitter.Inc",
+                "url": "https://twitter.com/explore/",
+                "mensagem": "Twitter setting has been set."
+            },
+            "whatsapp": {
+                "network-social": "Whatsapp.Inc",
+                "url": "https://web.whatsapp.com/",
+                "mensagem": "WhatsApp setting has been set."
+            }
+        }
+    },
+    "credential": {
+        "network": {
+            "facebook": {
+                "username": "ageu87@gmail.com",
+                "password": "@@cs4ia2020@@"
+            },
+            "instagram": {
+                "username": "",
+                "password": ""
+            },
+            "linkedin": {
+                "username": "",
+                "password": ""
+            },
+            "telegram": {
+                "username": "",
+                "password": ""
+            },
+            "twitter": {
+                "username": "",
+                "password": ""
+            },
+            "whatsapp": {
+                "username": "",
+                "password": ""
+            }
+        }
+    }
+}
