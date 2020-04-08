@@ -1,6 +1,7 @@
+from app import app
 from flask import Flask, render_template, url_for, flash, redirect
-from forms import RegistrationForm, LoginForm
-app = Flask(__name__)
+from app.models.forms import RegistrationForm, LoginForm
+
 
 app.config['SECRET_KEY'] = '886855575cf9628ee70e100744cacb8b'
 
@@ -26,9 +27,21 @@ posts = [
 ]
 
 @app.route("/")
+def index():
+    return render_template('index.html', title='Index')
+
+@app.route("/test")
+@app.route("/test/<name>")
+def test(name=None):
+    if name:
+        return "Olá, %s!" % name
+    else:
+        return "Olá, usuário!"
+
 @app.route("/home")
-def home():
+def home(name):
     return render_template('home.html', posts=posts, title='Home')
+    # return 'Olá, %s!' % name
 
 @app.route("/about")
 def about():
@@ -65,6 +78,3 @@ def login():
         else:
             flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('login.html', title='Login', form=form)
-
-if __name__ == '__main__':
-    app.run(debug=True)
